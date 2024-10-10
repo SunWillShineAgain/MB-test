@@ -1,14 +1,14 @@
 .input {
-	&__wrap {
-		border-bottom: 1px solid #ebebeb;
-	}
-
 	outline: none;
 	border: none;
 	padding: 15px;
 	padding-left: 60px;
 	width: 100%;
 	caret-color: #ababab;
+
+	&__wrap {
+		border-bottom: 1px solid #ebebeb;
+	}
 
 	&::placeholder {
 		color: #ababab;
