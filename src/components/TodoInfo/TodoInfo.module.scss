@@ -1,0 +1,47 @@
+.todos {
+	&__count {
+		flex-basis: 20%;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 14px;
+		padding: 10px 20px;
+
+		@media (max-width: 600px) {
+			flex-direction: column;
+			gap: 10px;
+		}
+	}
+
+	&__filters {
+		display: flex;
+		gap: 20px;
+
+		input {
+			display: none;
+		}
+
+		label {
+			cursor: pointer;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid transparent;
+		}
+
+		label:has(input:checked) {
+			border-color: #e9d9d8;
+		}
+	}
+
+	&__clear {
+		button {
+			background: transparent;
+			border: none;
+			outline: none;
+			cursor: pointer;
+		}
+	}
+}
